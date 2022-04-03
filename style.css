@@ -51,12 +51,27 @@ a:visited {
   border-top-left-radius: 0.5rem;
 }
 
-.logo {
-  height: 5.2rem;
-  align-self: center;
-  margin-bottom: 4rem;
+.nav{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: center;
 }
 
+.logo {
+  height: 5.2rem;
+  /* align-self: center; */
+  margin-bottom: 4rem;
+  justify-self: center;
+}
+.reset_img{
+  justify-self:end;
+  align-self: flex-end;
+}
+.reset_btn{
+  height: 3.2rem;
+  cursor: pointer;
+  
+}
 .workouts {
   list-style: none;
   height: 77vh;
@@ -73,7 +88,7 @@ a:visited {
   border-radius: 5px;
   padding: 1.5rem 2.25rem;
   margin-bottom: 1.75rem;
-  cursor: pointer;
+  /* cursor: pointer; */
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -89,7 +104,8 @@ a:visited {
 .workout__title {
   font-size: 1.7rem;
   font-weight: 600;
-  grid-column: 1 / -1;
+  grid-column: 1 / -2;
+  cursor: pointer;
 }
 
 .workout__details {
@@ -102,7 +118,15 @@ a:visited {
   margin-right: 0.2rem;
   height: 0.28rem;
 }
+.workout-icons-action{
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+}
 
+.workout__icon{
+  cursor: pointer;
+}
 .workout__value {
   font-size: 1.5rem;
   margin-right: 0.5rem;
@@ -172,7 +196,8 @@ a:visited {
 
 .form__btn {
   grid-column: 1/-1;
-  display: inline-block;
+  display: none;
+  /* display: inline-block; */
   border-radius: 0.2rem;
   border: none;
   cursor: pointer;
@@ -258,6 +283,16 @@ a:visited {
     align-self: center;
     margin-bottom: 5rem;
   }
+  
+.form__btn {
+  grid-column: 1/-1;
+  display: inline-block;
+  /* display: inline-block; */
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  /* background-color: #00c46a; */
+}
   .form {
     gap: 1.5rem 2.5rem;
     height: 13.25rem;
